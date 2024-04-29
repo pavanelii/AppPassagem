@@ -1,11 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppPassagem.MainPage"
-             Title="Sua Viagem">
+             x:Class="Appviagem.MainPage">
 
-    <ScrollView>
-        
-    </ScrollView>
+    <StackLayout Padding="20">
+        <Label Text="Distância da Viagem (km):" />
+        <Entry x:Name="distanciaR" Placeholder="Informe a distância" />
+
+        <Label Text="Eficiência de Combustível (km/L):" />
+        <Entry x:Name="eficienciaR" Placeholder="Informe a eficiencia" />
+
+        <Label Text="Custo do Combustível por Litro (R$):" />
+        <Entry x:Name="custocombustivelR" Placeholder="Informe o preço do combustível" />
+
+        <Button Text="Calcular" Clicked="calcularClicked" />
+    </StackLayout>
 
 </ContentPage>
+
